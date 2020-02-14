@@ -1,10 +1,10 @@
 # First Internship Notes
 
-It's important to keep in mind that this video should be good, like really good.
+It's important to keep in mind that this video should be good, like really good. 42 says, and I quote:  
 
-42 says, and I quote:  *"The state of your presentation, speech, and outfit
+> *The state of your presentation, speech, and outfit
 should be professional and the video-editing and -production should be
-high quality (worthy of presenting)"*
+high quality (worthy of presenting)*
 
 For me this says anything SFW and well, the way I present, talk and dress
 should look professional. Nothing more, nothing less.
@@ -35,51 +35,51 @@ small to large, especially for:
 
 What makes opus1.io special is:
 
-- Appointment scheduling
+- **Appointment scheduling**
 
 Schedule your staff (instructors, teachers, coaches etc.) availabilities,
 for specific services, locations and rooms and let your customers easily
 self-book single or recurring appointments
 
-- Classes / Courses
+- **Classes / Courses**
 
 Schedule your classes sessions, capacity, enrollment windows, locations,
 instructors, payment options and let your customer easily self-enroll and
 access their schedule
 
-- Payment
+- **Payment**
 
 Take payment from your customers on a single or recurring basis, with
 automated invoicing and competitively low credit card fees
 
-- Self-booking & Rescheduling
+- **Self-booking & Rescheduling**
 
 Let your customers self-book and self-reschedule their appointments
 with flexible policies that meet your business needs
 
-- Staff Management
+- **Staff Management**
 
 Manage your staff schedule, availabilities, pay rates, bonuses and
 automate payroll
 
-- Clients / Families
+- **Clients / Families**
 
 Manage your clients and families (e.g. mother, father, child, care taker).
 You know who is taking the service, who is paying for it and
 who to contact when needed
 
-- Automate Communications
+- **Automate Communications**
 
 Automate communications with your clients (sign-up reminders,
 appointment reminders, enrollment confirmation, cancellation policies,
 payment reminders, invoices receipt etc.)
 
-- Optimize your utilization
+- **Optimize**
 
 Visual your resources (locations, staff, rooms, equipment) utilization
 and optimize to maximize your profit and growth
 
-- Analytics & Utilization
+- **Analytics & Utilization**
 
 Get a clear view of your business key metrics
 (revenue, fill rate, membership, conversions)
@@ -98,20 +98,58 @@ Issues and Results of those projects
 
 #### Hooks
 
-- useToggle
-- useFetchData
-- useSessionStorage
+Hooks are React's...
+
+- **useToggle**
+
+I implemented to have a simple, yet common hook when
+a toggling action is needed. I used it to be able
+to toggle a modal.
+
+- **useFetchData**
+
+Because the app has about 42 restful api calls, we needed a way to reduce copy-paste code as much as possible. My boss guided me into creating this hook.
+
+- **useSessionStorage**
+
+This is another simple hook, but also very useful
+when you need to save states (data) in a user session,
+meaning that it will be persistent as long as he
+doesn't logout or close the browser.
 
 #### Components
 
-- SearchBar
-- Calendar
-- Operator Tab
+A component in React is....
 
-#### Styles and design
+- **SearchBar**
 
-- Rebranding
-- Theme
+Similar to AWS...
+
+- **Modal Calendar**
+
+A Modal ...
+
+- **Operator Tab**
+
+An example of a container-type component...
+
+#### Styles and Design
+
+...
+
+- **Rebranding**
+
+...
+
+Screenshot of before and after...
+Maybe blur if needed?
+
+- **Theme**
+
+By using `context`...
+
+This is to be in accordance with the new company
+image...
 
 ### Issues
 
@@ -119,11 +157,51 @@ Issues and Results of those projects
 
 #### Tests and Debugging
 
+- **Unit**
+
+...
+
+- **End-to-end**
+
 ...
 
 #### Refactoring
 
 ...
+
+- **Class to Functional Components**
+
+react started like this...
+
+```js
+// Example of first iteration of React.js
+```
+
+then like this...
+
+```js
+// Example of second iteration? (if it exists) of React.js
+```
+
+then this...
+
+```js
+// Class component based
+```
+
+and now...
+
+```js
+// Functional component
+```
+
+They are all equivalent!
+
+- **Styled Components**
+
+This is a module...
+
+Used `styled-components` to unify styles between components.
 
 #### Bug Fixes
 
@@ -131,6 +209,18 @@ Issues and Results of those projects
 
 #### Setup and Cleanup
 
-- Tests and debugging
-- Issues and bugs fixes
-- Refactor and clean-up
+...
+
+- **Updates**
+
+... Breaking changes
+
+... New features
+
+- **Linter**
+
+... eslint
+
+- **Formatter**
+
+... prittier
