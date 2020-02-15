@@ -13,7 +13,9 @@ so they and let it grow while focusing on what they love to do.
 
 During my time working as intern, I contributed to the following projects:
 
-### opus1.io platform
+### opus1.io
+
+![opus1io_logo]()
 
 opus1.io is an ideal solution for personal services businesses,
 small to large, especially for:
@@ -77,9 +79,11 @@ and optimize to maximize your profit and growth
 Get a clear view of your business key metrics
 (revenue, fill rate, membership, conversions)
 
-### Axiad's UnifiedUserPortal
+### Axiad UnifiedUserPortal
 
-The unified user portal of Axiad is ...
+![axiad_logo]()
+
+The unified user portal of Axiad is used to
 
 ## Results
 
@@ -146,74 +150,101 @@ image...
 
 ### Issues
 
-...
+
 
 #### Tests and Debugging
 
 - **Unit**
 
-...
+Used `Jest` as the testing framework. Its focus is on simplicity. It Ensures that the tests have unique global state, making them run reliably in parallel.
+It also runs previously failed tests first and re-organizes runs based on how long test files take. And did you know, it can also generate code coverage, collecting information from the entire project, including untested files.
 
 - **End-to-end**
 
-...
+Used `selenium-webdriver` to create robust, browser-based regression automation suites and tests. Selenium is a browser automation library.
 
 #### Refactoring
 
-...
+Major refactors that I made were:
 
-- **Class to Functional Components**
+- **Class Components to Functional Components**
 
-react started like this...
+React.js started like this...
 
 ```js
-// Example of first iteration of React.js
+// Example of a variable function component
+var MyComponent = React.createClass({
+  getDefaultProps: function() {
+    return {
+      text: 'Hello World!'
+    };
+  },
+  render: function() {
+    return <h1>{this.props.text}</h1>;
+  },
+})
 ```
 
-then like this...
+and then like this...
 
 ```js
-// Example of second iteration? (if it exists) of React.js
-```
+// Example of a class component
+class HelloWorld extends React.Component {
+  constructor (props) {
+    super(props);
+  }
+  render () {
+    const { text } = props;
+    return <h1>{text}</h1>
+  }
+}
 
-then this...
-
-```js
-// Class component based
+HelloWorld.defaultProps = {
+  text: 'Hello world!',
+}
 ```
 
 and now...
 
 ```js
-// Functional component
+// Example of a functional component
+const HelloWorld = ({ text = 'Hello world!' }) => <h1>HelloWorld!</h1>
 ```
 
 They are all equivalent!
 
 - **Styled Components**
 
-This is a module...
-
-Used `styled-components` to unify styles between components.
+Used this module to unify styles between components.
+It utilizes tagged template literals and the power of CSS, a, styled-components allows you to write actual CSS code to style your components. It also removes the mapping between components and styles. In other words... It. Is. Amazing.
 
 #### Bug Fixes
 
-...
+I fixed some bugs, like:
+
+- Fixed how scrollbars behave different between browsers... Hi Firefox!
+- Calendar wasn't being render correctly because of
+different browsers... Oh, hi again Firefox!
+- Timezone related issues... Where is Firefox?
 
 #### Setup and Cleanup
 
-...
+There was some setup and cleanup to be done.
 
-- **Updates**
+- **Breaking Changes**
 
-... Breaking changes
+Had to make several updates to multiple packages. It  has been a while since the last round of updates, so
+there where some breaking changes that we introduced.
+I good example is `styled-components`, that changed the way to import a global style from one version to the other.
 
-... New features
+- **Scripts**
+
+Made some scripts, like ```...check opus1 and axiad yarn scripts...```
 
 - **Linter**
 
-... eslint
+Used `eslint` as the linter to analyze the code to find problems that can be automatically fixed. It's similar to what we call in 42 "the norm". Our configuration is based on the AirBnB one, with some changes here and there...
 
 - **Formatter**
 
-... prittier
+Used `prettier` as the code formatter of our choice. It's an opinionated code formatter that supports many languages, and integrates easily with visual code. It's amazing because you press save and code is formatted, and there is no need to discuss style in code review.
