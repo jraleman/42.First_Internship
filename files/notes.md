@@ -150,7 +150,7 @@ image...
 
 ### Issues
 
-
+...
 
 #### Tests and Debugging
 
@@ -239,8 +239,13 @@ I good example is `styled-components`, that changed the way to import a global s
 
 - **Scripts**
 
-Made some scripts, like ```...check opus1 and axiad yarn scripts...```
+Made some scripts, like:
 
+```
+yarn debug-test   (jest-enviroment-node-debug)
+yarn analyze     (source-map-explorer)
+yarn test-report  (export test report to html)
+```
 - **Linter**
 
 Used `eslint` as the linter to analyze the code to find problems that can be automatically fixed. It's similar to what we call in 42 "the norm". Our configuration is based on the AirBnB one, with some changes here and there...
