@@ -15,7 +15,7 @@ During my time working as intern, I contributed to the following projects:
 
 ### opus1.io
 
-![opus1io_logo]()
+![opus1io_logo](../Assets/logos/opus1io.png)
 
 opus1.io is an ideal solution for personal services businesses,
 small to large, especially for:
@@ -81,9 +81,11 @@ Get a clear view of your business key metrics
 
 ### Axiad UnifiedUserPortal
 
-![axiad_logo]()
+![axiad_logo](../Assets/logos/axiad.png)
 
-The unified user portal of Axiad is used to
+It's kinda a secret what I have done with an unnamed project from Axiad. ;)
+
+...company info
 
 ## Results
 
@@ -91,11 +93,11 @@ During my internship period, I contributed to:
 
 ### Features
 
-Issues and Results of those projects
+I made some cool feature, such as:
 
 #### Hooks
 
-Hooks are React's...
+< hook_definition />
 
 - **useToggle**
 
@@ -116,7 +118,7 @@ doesn't logout or close the browser.
 
 #### Components
 
-A component in React is....
+< Component definition />
 
 - **SearchBar**
 
